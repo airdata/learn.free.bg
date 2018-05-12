@@ -1,0 +1,148 @@
+.video-js .vjs-menu-button-inline.vjs-slider-active,
+.video-js .vjs-menu-button-inline:focus,
+.video-js .vjs-menu-button-inline:hover,
+.video-js.vjs-no-flex .vjs-menu-button-inline
+{
+    width: 10em;
+}
+
+.video-js .vjs-controls-disabled .vjs-big-play-button
+{
+    display: none!important;
+}
+
+.video-js .vjs-control
+{
+    width: 3em;
+}
+
+.video-js .vjs-menu-button-inline:before
+{
+    width: 1.5em;
+}
+
+.vjs-menu-button-inline .vjs-menu
+{
+    left: 3em;
+}
+
+.video-js .vjs-load-progress div,
+.vjs-seeking .vjs-big-play-button,
+.vjs-waiting .vjs-big-play-button
+{
+    display: none!important;
+}
+
+.video-js .vjs-mouse-display:after,
+.video-js .vjs-play-progress:after
+{
+    padding: 0 .4em .3em;
+}
+
+.video-js.vjs-ended .vjs-loading-spinner
+{
+    display: none;
+}
+
+.video-js.vjs-ended .vjs-big-play-button
+{
+    display: block!important;
+}
+
+.video-js.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,
+video-js.vjs-ended .vjs-big-play-button
+{
+    display: block;
+}
+
+.video-js .vjs-big-play-button
+{
+    font-size: 4em;line-height: 2em!important;
+    top: 50%;
+    left: 50%;
+    height: 2em!important;
+    margin-top: -1em!important;
+    margin-left: -1.5em;
+    border-radius: 5%;
+    background-color: #2C3137;
+    color: #5A6472;
+    border: 0;
+}
+
+.video-js .vjs-big-play-button:active,
+.video-js .vjs-big-play-button:focus,
+.video-js:hover .vjs-big-play-button
+{
+    color: #2dc9ff;
+    background-color: #2C3137;
+}
+
+.video-js .vjs-loading-spinner
+{
+    border-color: #5a6472;
+}
+
+.video-js .vjs-control-bar2
+{
+    background-color: #2c3137;
+}
+
+.video-js .vjs-control-bar
+{
+    font-size: 12px;
+    color: #6d7b8c;
+    background-color: #2c3137!important;
+}
+
+.video-js .vjs-control:hover {
+    color: #2dc9ff;
+}
+
+.video-js .vjs-play-progress,
+.video-js .vjs-volume-level
+{
+    background-color: #2dc9ff;
+}
+
+.video-js .vjs-control:focus:before, .video-js .vjs-control:hover:before, .video-js .vjs-control:focus {
+    text-shadow: none;
+}
+
+.video-js .vjs-time-tooltip, .video-js .vjs-mouse-display:after, .video-js .vjs-play-progress:after {
+    padding: .5em;
+}
+
+.video-js .vjs-time-tooltip, .video-js .vjs-mouse-display:after, .video-js .vjs-play-progress:after,
+.vjs-menu li.vjs-menu-item {
+    background-color: #1E2228;
+    color: #6C7A8A;
+}
+
+.video-js .vjs-big-play-button:before {
+    font-size: 1.5em;
+}
+
+.video-js .vjs-remaining-time,
+.video-js .vjs-playback-rate {
+    width: 4em;
+}
+
+.video-js .vjs-playback-rate .vjs-playback-rate-value,
+.video-js .vjs-remaining-time {
+    font-size: 1.2em;
+    line-height: 2.4em;
+}
+
+.video-js .vjs-play-progress:before {
+    top: -0.3em;
+}
+
+.video-js .vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+    background-color: #1E2228;
+}
+
+.vjs-menu li.vjs-menu-item:focus, .vjs-menu li.vjs-menu-item:hover {
+    color: #2dc9ff;
+    background-color: rgba(115, 133, 159, .1);
+}
