@@ -1579,7 +1579,7 @@ mark, .mark {
 }
 
 .text-primary {
-    color: #F76D35;
+    color: rgb(53, 247, 79);
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -1624,7 +1624,7 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
-    background-color: #F9953D;
+    background-color: rgb(61, 249, 102);
 }
 
 .bg-success {
