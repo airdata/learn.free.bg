@@ -1547,6 +1547,12 @@ mark, .mark {
 .text-center {
     text-align: center;
 }
+.row.no-gutter .col-xs-12 .product-title.text-center {
+}
+.row.no-gutter .col-xs-12 .product-title.text-center {
+}
+.row.no-gutter .col-xs-12 .product-title.text-center {
+}
 
 .text-justify {
     text-align: justify;
