@@ -1,0 +1,1147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #000000; }
+.body_background { background-color: #AAAAAA; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #000000; font-weight: bold; }
+.inv_foreground { color: #FFFFFF; }
+.inv_background { background-color: #000000; }
+.ansi1 { font-weight: bold; }
+.ansi31 { color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.ansi34 { color: #0000aa; }
+.ansi35 { color: #E850A8; }
+.ansi36 { color: #00aaaa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+<span class="ansi36">                          _
+  _ __  _ __ _____      _| | ___ _ __
+ | '_ \| '__/ _ \ \ /\ / / |/ _ \ '__|
+ | |_) | | | (_) \ V  V /| |  __/ |
+ | .__/|_|  \___/ \_/\_/ |_|\___|_|v2.0-beta2
+ |_|</span><span class="ansi34"> the handy cloud security tool</span>
+
+<span class="ansi1 ansi33"> Date: Tue Jul 10 11:11:21 EEST 2018
+
+</span> Colors code for results: 
+<span class="ansi1 ansi33"> INFO (Information)</span>,<span class="ansi1 ansi32"> PASS (Recommended value)</span>, <span class="ansi1 ansi31"> FAIL (Fix required)</span>, <span class="ansi35"> Not Scored </span>
+
+ This report is being generated using credentials below:
+
+ AWS-CLI Profile: <span class="ansi1 ansi33">[rumen]</span> AWS API Region: <span class="ansi1 ansi33">[us-east-1]</span> AWS Filter Region: <span class="ansi1 ansi33">[all]</span>
+
+ Caller Identity:
+-------------------------------------------------------------
+|                     GetCallerIdentity                     |
++---------+-------------------------------------------------+
+|  Account|  409346597177                                   |
+|  Arn    |  arn:aws:iam::409346597177:user/rumen.lishkov   |
+|  UserId |  AIDAJNMZZLQFDW7MSKCDG                          |
++---------+-------------------------------------------------+
+
+
+<span class="ansi35"> 0.1 Generating AWS IAM Credential Report... </span>
+
+<span class="ansi35"> 1.0 Identity and Access Management - [group1] ********************** </span>
+
+<span class="ansi34"> 1.1 </span> [check11] Avoid the use of the root account (Scored)
+      <span class="ansi1 ansi33"> INFO! Root account last accessed (password key_1 key_2): 2018-06-15T05:43:45+00:00 N/A N/A </span>
+
+<span class="ansi34"> 1.2 </span> [check12] Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password (Scored)
+      <span class="ansi1 ansi31"> FAIL! User dobromir.grigorov has Password enabled but MFA disabled </span>
+      <span class="ansi1 ansi31"> FAIL! User mirela.lazar has Password enabled but MFA disabled </span>
+      <span class="ansi1 ansi31"> FAIL! User philippe.bansse has Password enabled but MFA disabled </span>
+
+<span class="ansi34"> 1.3 </span> [check13] Ensure credentials unused for 90 days or greater are disabled (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> User "AlexandreLanger" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "andrei.neacsu" found with credentials used in the last 90 days
+      <span class="ansi1 ansi31"> FAIL! User "borislav.parvanov" has not logged in during the last 90 days  </span>
+      <span class="ansi1 ansi32"> PASS!</span> User "bpeteva" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "cristian.dascalu" found with credentials used in the last 90 days
+      <span class="ansi1 ansi31"> FAIL! User "dev-user" has not logged in during the last 90 days  </span>
+      <span class="ansi1 ansi31"> FAIL! User "dobromir.grigorov" has not logged in during the last 90 days  </span>
+      <span class="ansi1 ansi32"> PASS!</span> User "iw-adriana.preda" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "iw-mihai.toma" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "magi.ivancheva" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "mariyan.stefanov" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "martin.baltuhin" found with credentials used in the last 90 days
+      <span class="ansi1 ansi31"> FAIL! User "mirela.lazar" has not logged in during the last 90 days  </span>
+      <span class="ansi1 ansi32"> PASS!</span> User "pavel.danov" found with credentials used in the last 90 days
+      <span class="ansi1 ansi31"> FAIL! User "philippe.bansse" has not logged in during the last 90 days  </span>
+      <span class="ansi1 ansi32"> PASS!</span> User "plamen.chernev" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "radoslav.daskalov" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "rumen.lishkov" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "stefan.dobrev" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "valeri.vuchov" found with credentials used in the last 90 days
+      <span class="ansi1 ansi32"> PASS!</span> User "velko.ivanov" found with credentials used in the last 90 days
+
+<span class="ansi34"> 1.4 </span> [check14] Ensure access keys are rotated every 90 days or less (Scored)
+      <span class="ansi1 ansi31"> FAIL!  andrei.neacsu has not rotated access key1 in over 90 days  </span>
+      <span class="ansi1 ansi31"> FAIL!  poweruser has not rotated access key1 in over 90 days  </span>
+      <span class="ansi1 ansi31"> FAIL!  pwmonitoring-tool has not rotated access key1 in over 90 days  </span>
+      <span class="ansi1 ansi31"> FAIL!  stefan.dobrev has not rotated access key1 in over 90 days  </span>
+      <span class="ansi1 ansi32"> PASS!</span> No users with access key 2.
+
+<span class="ansi34"> 1.5 </span> [check15] Ensure IAM password policy requires at least one uppercase letter (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Password Policy requires upper case
+
+<span class="ansi34"> 1.6 </span> [check16] Ensure IAM password policy require at least one lowercase letter (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Password Policy requires lower case
+
+<span class="ansi34"> 1.7 </span> [check17] Ensure IAM password policy require at least one symbol (Scored)
+      <span class="ansi1 ansi31"> FAIL! Password Policy missing symbol requirement </span>
+
+<span class="ansi34"> 1.8 </span> [check18] Ensure IAM password policy require at least one number (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Password Policy requires number
+
+<span class="ansi34"> 1.9 </span> [check19] Ensure IAM password policy requires minimum length of 14 or greater (Scored)
+      <span class="ansi1 ansi31"> FAIL! Password Policy missing or weak length requirement </span>
+
+<span class="ansi34"> 1.10 </span> [check110] Ensure IAM password policy prevents password reuse: 24 or greater (Scored)
+      <span class="ansi1 ansi31"> FAIL! Password Policy has weak reuse requirement (lower than 24) </span>
+
+<span class="ansi34"> 1.11 </span> [check111] Ensure IAM password policy expires passwords within 90 days or less (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Password Policy includes expiration (Value: 60)
+
+<span class="ansi34"> 1.12 </span> [check112] Ensure no root account access key exists (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> No access key 1 found for root
+      <span class="ansi1 ansi32"> PASS!</span> No access key 2 found for root
+
+<span class="ansi34"> 1.13 </span> [check113] Ensure MFA is enabled for the root account (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Virtual MFA is enabled for root
+
+<span class="ansi34"> 1.14 </span> [check114] Ensure hardware MFA is enabled for the root account (Scored)
+      <span class="ansi1 ansi31"> FAIL! Only Virtual MFA is enabled for root </span>
+
+<span class="ansi34"> 1.15 </span> [check115] Ensure security questions are registered in the AWS account (Not Scored)
+      <span class="ansi1 ansi33"> INFO! No command available for check 1.15  </span>
+      <span class="ansi1 ansi33"> INFO! Login to the AWS Console as root &amp; click on the Account  </span>
+      <span class="ansi1 ansi33"> INFO! Name -&gt; My Account -&gt; Configure Security Challenge Questions  </span>
+
+<span class="ansi34"> 1.16 </span> [check116] Ensure IAM policies are attached only to groups or roles (Scored)
+      <span class="ansi1 ansi31"> FAIL! AlexandreLanger has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! andrei.neacsu has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! borislav.parvanov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! bpeteva has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! cristian.dascalu has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! dobromir.grigorov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! iw-adriana.preda has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! iw-mihai.toma has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! magi.ivancheva has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! mariyan.stefanov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! martin.baltuhin has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! mirela.lazar has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! pavel.danov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! philippe.bansse has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! plamen.chernev has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! poweruser has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! pwmonitoring-tool has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! radoslav.daskalov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! rumen.lishkov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! s3-read-efs-backups has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! s3-write-dlc has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! stefan.dobrev has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! valeri.vuchov has policy directly attached  </span>
+      <span class="ansi1 ansi31"> FAIL! velko.ivanov has policy directly attached  </span>
+
+<span class="ansi34"> 1.17 </span> [check117] Enable detailed billing (Scored)
+      <span class="ansi1 ansi33"> INFO! No command available for check 1.17  </span>
+      <span class="ansi1 ansi33"> INFO! See section 1.17 on the CIS Benchmark guide for details  </span>
+
+<span class="ansi34"> 1.18 </span> [check118] Ensure IAM Master and IAM Manager roles are active (Scored)
+      <span class="ansi1 ansi31"> FAIL! IAM Master and IAM Manager roles not found </span>
+
+<span class="ansi34"> 1.19 </span> [check119] Maintain current contact details (Scored)
+      <span class="ansi1 ansi33"> INFO! No command available for check 1.19  </span>
+      <span class="ansi1 ansi33"> INFO! See section 1.19 on the CIS Benchmark guide for details  </span>
+
+<span class="ansi34"> 1.20 </span> [check120] Ensure security contact information is registered (Scored)
+      <span class="ansi1 ansi33"> INFO! No command available for check 1.20  </span>
+      <span class="ansi1 ansi33"> INFO! See section 1.20 on the CIS Benchmark guide for details  </span>
+
+<span class="ansi35"> 1.21 [check121] Ensure IAM instance roles are used for AWS resource access from instances (Not Scored) </span>
+      <span class="ansi1 ansi33"> INFO! No command available for check 1.21  </span>
+      <span class="ansi1 ansi33"> INFO! See section 1.21 on the CIS Benchmark guide for details  </span>
+
+<span class="ansi34"> 1.22 </span> [check122] Ensure a support role has been created to manage incidents with AWS Support (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Support Policy attached to arn:aws:iam::aws:policy/AWSSupportAccess
+
+<span class="ansi35"> 1.23 [check123] Do not setup access keys during initial user setup for all IAM users that have a console password (Not Scored) </span>
+      <span class="ansi1 ansi33"> INFO! andrei.neacsu has never used Access Key 1 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No users found with Access Key 2 never used
+
+<span class="ansi34"> 1.24 </span> [check124] Ensure IAM policies that allow full "*:*" administrative privileges are not created (Scored)
+      <span class="ansi1 ansi33"> INFO! Looking for custom policies: (skipping default policies - it may take few seconds...) </span>
+      <span class="ansi1 ansi33"> INFO! List of custom policies:  </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/b12-ec2-restrictedaccess allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/b12-elasticache-elasticsearch-restrictedaccess allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/service-role/CodeBuildTrustPolicy-data-storage-build-1509551023017 allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/DeveloperEC2RegionLocked allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/DeveloperElastiCacheRegionLocked allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/DeveloperRDSRegionLocked allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/Restrict-non-active-regions allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/RestrictedDevEC2 allows "*:*" </span>
+      <span class="ansi1 ansi33"> INFO! Policy arn:aws:iam::409346597177:policy/RestrictedDevElasticCache-Search allows "*:*" </span>
+
+<span class="ansi35"> 2.0 Logging - [group2] ********************************************* </span>
+
+<span class="ansi34"> 2.1 </span> [check21] Ensure CloudTrail is enabled in all regions (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudTrail trails found! </span>
+
+<span class="ansi34"> 2.2 </span> [check22] Ensure CloudTrail log file validation is enabled (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudTrail trails found! </span>
+
+<span class="ansi34"> 2.3 </span> [check23] Ensure the S3 bucket CloudTrail logs to is not publicly accessible (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudTrail bucket found! </span>
+
+<span class="ansi34"> 2.4 </span> [check24] Ensure CloudTrail trails are integrated with CloudWatch Logs (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudTrail trails found! </span>
+
+<span class="ansi34"> 2.5 </span> [check25] Ensure AWS Config is enabled in all regions (Scored)
+      <span class="ansi1 ansi31"> FAIL! Region ap-south-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-west-3 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-west-2 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-west-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region ap-northeast-2 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region ap-northeast-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region sa-east-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region ca-central-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region ap-southeast-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region ap-southeast-2 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-central-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region us-east-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region us-east-2 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region us-west-1 has AWS Config disabled or not configured </span>
+      <span class="ansi1 ansi31"> FAIL! Region us-west-2 has AWS Config disabled or not configured </span>
+
+<span class="ansi34"> 2.6 </span> [check26] Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket (Scored)
+      <span class="ansi1 ansi31"> FAIL! CloudTrail bucket not found! </span>
+
+<span class="ansi34"> 2.7 </span> [check27] Ensure CloudTrail logs are encrypted at rest using KMS CMKs (Scored)
+      <span class="ansi1 ansi31"> FAIL! CloudTrail bucket doesn't exist! </span>
+
+<span class="ansi34"> 2.8 </span> [check28] Ensure rotation for customer created CMKs is enabled (Scored)
+      <span class="ansi1 ansi33"> INFO! ap-south-1: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-1: This region doesn't have CUSTOM encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: This region doesn't have CUSTOM encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: This region doesn't have CUSTOM encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: This region doesn't have CUSTOM encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: This region doesn't have ANY encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: This region doesn't have CUSTOM encryption keys </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: This region doesn't have CUSTOM encryption keys </span>
+
+<span class="ansi35"> 3.0 Monitoring - [group3] ****************************************** </span>
+
+<span class="ansi34"> 3.1 </span> [check31] Ensure a log metric filter and alarm exist for unauthorized API calls (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.2 </span> [check32] Ensure a log metric filter and alarm exist for Management Console sign-in without MFA (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.3 </span> [check33] Ensure a log metric filter and alarm exist for usage of root account (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.4 </span> [check34] Ensure a log metric filter and alarm exist for IAM policy changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.5 </span> [check35] Ensure a log metric filter and alarm exist for CloudTrail configuration changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.6 </span> [check36] Ensure a log metric filter and alarm exist for AWS Management Console authentication failures (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.7 </span> [check37] Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.8 </span> [check38] Ensure a log metric filter and alarm exist for S3 bucket policy changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.9 </span> [check39] Ensure a log metric filter and alarm exist for AWS Config configuration changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.10 </span> [check310] Ensure a log metric filter and alarm exist for security group changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.11 </span> [check311] Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL) (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.12 </span> [check312] Ensure a log metric filter and alarm exist for changes to network gateways (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.13 </span> [check313] Ensure a log metric filter and alarm exist for route table changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.14 </span> [check314] Ensure a log metric filter and alarm exist for VPC changes (Scored)
+      <span class="ansi1 ansi31"> FAIL! No CloudWatch group found for CloudTrail events </span>
+
+<span class="ansi34"> 3.15 </span> [check315] Ensure appropriate subscribers to each SNS topic (Not Scored)
+      <span class="ansi1 ansi32"> PASS!</span> Region ap-south-1 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region eu-west-3 has 0 topics
+      <span class="ansi1 ansi33"> INFO! Region eu-west-2 has 1 topics </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-west-2 / Topic dynamodb / Subscription NONE </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 has 5 topics </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic IAM_Policy_Changes / Subscription stefan.dobrev@b12.bg	email </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic IAM_Policy_Changes / Subscription asen.antonov@b12.bg	email </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic IAM_Policy_Changes / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic RND-Support-Team / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic RND-Support-Team / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic RND-Support-Team / Subscription bpeteva@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region eu-west-1 / Topic VersionUpdate / Subscription plamen.chernev@b12.bg	email </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-west-1 / Topic dynamodb / Subscription NONE </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-west-1 / Topic poweruser-actions / Subscription NONE </span>
+      <span class="ansi1 ansi32"> PASS!</span> Region ap-northeast-2 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region ap-northeast-1 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region sa-east-1 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region ca-central-1 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region ap-southeast-1 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region ap-southeast-2 has 0 topics
+      <span class="ansi1 ansi33"> INFO! Region eu-central-1 has 1 topics </span>
+      <span class="ansi1 ansi31"> FAIL! Region eu-central-1 / Topic dynamodb / Subscription NONE </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 has 11 topics </span>
+      <span class="ansi1 ansi31"> FAIL! Region us-east-1 / Topic AutoscaleUp / Subscription NONE </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerCountChange / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerCountChange / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerCountChange / Subscription server_alerts@b12.bg	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerFailure / Subscription +359883314109	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerFailure / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerFailure / Subscription +359886244022	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameServerFailure / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameTaskFailing / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameTaskFailing / Subscription +359883314109	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameTaskFailing / Subscription +359886244022	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameTaskFailing / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameTaskStateChange / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic GameTaskStateChange / Subscription server_alerts@b12.bg	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic Gold-Environment-Unhealthy-host / Subscription martin.baltuhin@gmail.com	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerCountChange / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerCountChange / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerCountChange / Subscription server_alerts@b12.bg	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerFailure / Subscription +359886244022	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerFailure / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerFailure / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceServerFailure / Subscription +359883314109	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskFailing / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskFailing / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskFailing / Subscription +359883314109	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskFailing / Subscription +359886244022	sms </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskStateChange / Subscription mbaltuhin@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskStateChange / Subscription mstefanov@rnd-solutions.net	email </span>
+      <span class="ansi1 ansi33"> INFO! Region us-east-1 / Topic ServiceTaskStateChange / Subscription server_alerts@b12.bg	email </span>
+      <span class="ansi1 ansi31"> FAIL! Region us-east-1 / Topic dynamodb / Subscription NONE </span>
+      <span class="ansi1 ansi32"> PASS!</span> Region us-east-2 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region us-west-1 has 0 topics
+      <span class="ansi1 ansi32"> PASS!</span> Region us-west-2 has 0 topics
+
+<span class="ansi35"> 4.0 Networking - [group4] ****************************************** </span>
+
+<span class="ansi34"> 4.1 </span> [check41] Ensure no security groups allow ingress from 0.0.0.0/0 to port 22 (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-south-1 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in eu-west-3 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in eu-west-2 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-5a242422 open to 0.0.0.0/0 in Region eu-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-5f8e8427 open to 0.0.0.0/0 in Region eu-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-7dd6e006 open to 0.0.0.0/0 in Region eu-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-fec46984 open to 0.0.0.0/0 in Region eu-west-1 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-northeast-2 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-northeast-1 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in sa-east-1 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ca-central-1 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-southeast-1 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-southeast-2 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-a7f01cca open to 0.0.0.0/0 in Region eu-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-bc6a29d6 open to 0.0.0.0/0 in Region eu-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-a0a42fd6 open to 0.0.0.0/0 in Region us-east-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-ba3815cd open to 0.0.0.0/0 in Region us-east-1 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in us-east-2 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in us-west-1 with port 22 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in us-west-2 with port 22 TCP open to 0.0.0.0/0
+
+<span class="ansi34"> 4.2 </span> [check42] Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389 (Scored)
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-south-1 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in eu-west-3 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in eu-west-2 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-5a242422 open to 0.0.0.0/0 in Region eu-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-5f8e8427 open to 0.0.0.0/0 in Region eu-west-1 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-northeast-2 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-northeast-1 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in sa-east-1 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ca-central-1 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-southeast-1 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in ap-southeast-2 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-bc6a29d6 open to 0.0.0.0/0 in Region eu-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Found Security Group: sg-a0a42fd6 open to 0.0.0.0/0 in Region us-east-1 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in us-east-2 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in us-west-1 with port 3389 TCP open to 0.0.0.0/0
+      <span class="ansi1 ansi32"> PASS!</span> No Security Groups found in us-west-2 with port 3389 TCP open to 0.0.0.0/0
+
+<span class="ansi34"> 4.3 </span> [check43] Ensure VPC Flow Logging is Enabled in all VPCs (Scored)
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region ap-south-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region eu-west-3 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region eu-west-2 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region eu-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region ap-northeast-2 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region ap-northeast-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region sa-east-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region ca-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region ap-southeast-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region ap-southeast-2 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region eu-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region us-east-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region us-east-2 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region us-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! No VPCFlowLog has been found in Region us-west-2 </span>
+
+<span class="ansi34"> 4.4 </span> [check44] Ensure the default security group of every VPC restricts all traffic (Scored)
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region ap-south-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region eu-west-3 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No Default Security Groups open to 0.0.0.0 found in Region eu-west-2
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region eu-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region ap-northeast-2 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region ap-northeast-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region sa-east-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region ca-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region ap-southeast-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region ap-southeast-2 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region eu-central-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region us-east-1 </span>
+      <span class="ansi1 ansi32"> PASS!</span> No Default Security Groups open to 0.0.0.0 found in Region us-east-2
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region us-west-1 </span>
+      <span class="ansi1 ansi31"> FAIL! Default Security Groups found that allow 0.0.0.0 IN or OUT traffic in Region us-west-2 </span>
+
+<span class="ansi35"> 4.5 [check45] Ensure routing tables for VPC peering are "least access" (Not Scored) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for VPC peering in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-south-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-3: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-2: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> sa-east-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> ca-central-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-2: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-1: No VPC peering found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-2: No VPC peering found
+
+<span class="ansi35"> 7.0 Extras - [extras] ********************************************** </span>
+
+<span class="ansi35"> 7.1 [extra71] Ensure users with AdministratorAccess policy have MFA tokens enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Developers group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! DevRestricted group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! DynamoDBFullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! EC2FullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! ElastiCacheFullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! ElasticBeanstalkFullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! GatewayAPIFullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! LambdaFullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! Route53FullAccess group provides non-administrative access </span>
+      <span class="ansi1 ansi33"> INFO! S3FullAccess group provides non-administrative access </span>
+
+<span class="ansi35"> 7.2 [extra72] Ensure there are no EBS Snapshots set as Public (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for EBS Snapshots in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0380a1d9148a9f554 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-04942aa8e99728836 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0f23aeb5b49a59865 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0805170105506d3b6 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-07e7f69d39d12404a is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-01306d3a773949f21 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-06ef6444d1ec0d507 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0d59d90035cd1357e is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0471f4512a3ffe85f is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0c8abd90aedac02f3 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0266d42129e8ecb1e is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-094be30f032ed9d95 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-07c8e7f9b186a5cd2 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-08cf3fc538471dd92 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0558570845d905e8c is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-075c51ab997a5a288 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0f02dfed579c75549 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0dff73b5e8f0d2de3 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0fd044897e6d437a1 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-07c74f0d518594f4f is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-087ab55f75f5b5b6d is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0516c1c682a531ad7 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0031237014e1e6883 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-019ac0a84bfec2051 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0901ee13d943a1e34 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-05237c2b2d3ff1f1d is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-07bdf0045e35db6d8 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-04693128ce96ceb10 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0160b36200ae1ad7b is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-08557630d18163238 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-043f37c773bb62031 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0e4f86ce5dbfe7c7b is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0516c7eef5849886f is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0b434383a6efac5b2 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0b9dbf0f035902d46 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-015e754e6ec6ba0ea is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0de3b0fc6c4832bbb is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-00704b3dd6f4013e8 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-081b33acc856f87e3 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-09e01b2db0c49e36b is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-0e74b8c2ccd5da1d9 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-00c4d89d435278e93 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-069a9c2f3ff345227 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-00f3ebc1b990f9359 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: snap-09baca641aa3721fd is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: snap-073f6bbfbb45333d4 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: snap-02b86e7e85b91af1d is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: snap-092883f2d636bac1f is not Public
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: snap-0a1db071519a9923c is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-04e88578a0fb8ad92 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-005884d82ba4542c0 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-0e7d15a1f3349fee4 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-050e5f411363bd0d9 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-0d465626afe2f21a2 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-08451c618d0fbfe0e is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-0623e2b526987ba68 is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-0a5fc49cbeb329acf is not Public
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: snap-030ef7c80749e64b1 is not Public
+
+<span class="ansi35"> 7.3 [extra73] Ensure there are no S3 buckets open to the Everyone or Any AWS user (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for open S3 Buckets (ACLs and Policies) in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: b12-dlc-test bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: b12.eu-west-1.alpha.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: b12.gamespace.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: b12.sql.backups bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: b12.us-east-1.alpha.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: b12.us-east-1.beta.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: b12.us-east-1.gold.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: backup-game-efs-bucket bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: cf-templates-hrwhitupm24r-us-east-1 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: codepipeline-eu-west-1-454327313943 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: codepipeline-us-east-1-865907654632 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: dataservice.b12.bucket bucket is not open
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: dlc.eu-west-1.alpha.war bucket is open to the Internet (Everyone) with permissions: READ </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: dlc.us-east-1.alpha.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: dlc.us-east-1.gold.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: dlc.us-east-1.war bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: dynamodb-export-ireland bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: efs-backup-daily bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: efs-backup-hourly bucket is not open
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: elastic-search-123 bucket policy "may" allow Anonymous users to perform actions (Principal: "*") </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: elasticbeanstalk-eu-central-1-409346597177 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: elasticbeanstalk-eu-west-1-409346597177 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: elasticbeanstalk-eu-west-2-409346597177 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: elasticbeanstalk-us-east-1-409346597177 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: elasticbeanstalk-us-east-2-409346597177 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: elb-connection.log bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: game-instalation bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: general-tmp-us-east-1 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sample-0987654321 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: sample12345678901 bucket is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: thor-server-b12 bucket is not open
+
+<span class="ansi35"> 7.4 [extra74] Ensure there are no Security Groups without ingress filtering being used (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for Security Groups in all regions...   </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-0def0470 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-33bf8f4b has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-5a242422 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-5aa19a22 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-5f8e8427 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-7d7f0e06 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-7dd6e006 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-ce9b74b4 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-1: sg-fec46984 has no ingress filtering but it is no being used </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: sg-a7f01cca has no ingress filtering but it is no being used </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: sg-bc6a29d6 has no ingress filtering but it is no being used </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-13295a64 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: sg-273bc851 has no ingress filtering but it is no being used </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-2b26555c has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-34116243 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-3f413248 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-5a25242e has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-5b25242f has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-8b1a1bff has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-a0a42fd6 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-b04cdbf9 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-b30aa5c5 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-ba3815cd has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-e4351893 has no ingress filtering and it is being used! </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: sg-ef909c98 has no ingress filtering but it is no being used </span>
+
+<span class="ansi35"> 7.5 [extra75] Ensure there are no Security Groups not being used (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for Security Groups in all regions...   </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: sg-8c7078e5 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: sg-b83698d1 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-0def0470 is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-33bf8f4b is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-4063123b is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-5a242422 is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-5aa19a22 is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-5f8e8427 is being used
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-73ba5c09 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-7d7f0e06 is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-7dd6e006 is being used
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-998f69e3 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-9ead8de4 is being used
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: sg-ce9b74b4 is being used
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: sg-fec46984 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: sg-67198d0f is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: sg-807496e6 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: sg-96cd26f1 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: sg-4d079524 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: sg-84015de3 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: sg-0a8dcc6d is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: sg-196a2973 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: sg-5f57d632 is being used
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: sg-a7f01cca is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: sg-bc6a29d6 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-13295a64 is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-273bc851 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-2b26555c is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-3268d34c is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-34116243 is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-3f413248 is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-4d13603a is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-5a25242e is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-5b25242f is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-601e1f14 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-7d6d2d0a is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-842520f3 is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-8b1a1bff is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-8f1a1bfb is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-a0a42fd6 is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-b04cdbf9 is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-b2282dc5 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-b30aa5c5 is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-ba3815cd is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-c81684bf is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-db429e92 is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-e4351893 is being used
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-e84bf29e is being used
+      <span class="ansi1 ansi31"> FAIL! us-east-1: sg-ef909c98 is not being used! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: sg-fd2e5d8a is being used
+      <span class="ansi1 ansi31"> FAIL! us-west-1: sg-83280fe4 is not being used! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: sg-9983e3e2 is not being used! </span>
+
+<span class="ansi35"> 7.6 [extra75] Ensure there are no EC2 AMIs set as Public (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for AMIs in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-south-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-3: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-2: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> sa-east-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> ca-central-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-2: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-1: No Public AMIs found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-2: No Public AMIs found
+
+<span class="ansi35"> 7.7 [extra77] Ensure there are no ECR repositories set as Public (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for ECR repos in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: translation-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: push-notification is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: assets-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: auth-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: game-installation is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: realm-balancer-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: config-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: game-installation-syslog is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: game-monitoring-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: data-storage-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: push-notification is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: translation-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: b12-game-server is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: game is not open
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: game-monitoring-service is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: authorization is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: translation is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: monitoring is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: configuration is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: realm-balancer is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: data-storage is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: assets is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: game-server is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: admin-tools is not open
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: push-notification is not open
+
+<span class="ansi35"> 7.8 [extra78] Ensure there are no Public Accessible RDS instances (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for RDS instances in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-south-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-3: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: RDS instance: ms-sql-express at ms-sql-express.cbvxqdftwoc9.eu-west-1.rds.amazonaws.com is set as Publicly Accessible! </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-2: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> sa-east-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> ca-central-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-2: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi31"> FAIL! us-east-1: RDS instance: b12-gold at b12-gold.c22mg5rmunik.us-east-1.rds.amazonaws.com is set as Publicly Accessible! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: RDS instance: b12-load-tests at b12-load-tests.c22mg5rmunik.us-east-1.rds.amazonaws.com is set as Publicly Accessible! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-1: no Publicly Accessible RDS instances found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-2: no Publicly Accessible RDS instances found
+
+<span class="ansi35"> 7.9 [extra79] Check for internet facing Elastic Load Balancers (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for Elastic Load Balancers in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-south-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-3: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: no Internet Facing ELBs found
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: ELB: ServiceALB at DNS: ServiceALB-1300596031.eu-west-1.elb.amazonaws.com is internet-facing! </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-2: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> sa-east-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> ca-central-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-2: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi31"> FAIL! us-east-1: ELB: awseb-e-m-AWSEBLoa-P0ED2P50MARD at DNS: awseb-e-m-AWSEBLoa-P0ED2P50MARD-1034220231.us-east-1.elb.amazonaws.com is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: ELB: ServiceClusterALB at DNS: ServiceClusterALB-1765700924.us-east-1.elb.amazonaws.com is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: ELB: Prod-ServiceALB at DNS: Prod-ServiceALB-1052731288.us-east-1.elb.amazonaws.com is internet-facing! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-1: no Internet Facing ELBs found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-2: no Internet Facing ELBs found
+
+<span class="ansi35"> 7.10 [extra710] Check for internet facing EC2 Instances (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for instances in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-south-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-3: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-08b98601a7065ca01 at IP: 34.244.168.235 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-0dac28c6ea83c5aed at IP: 34.244.125.163 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-03c3c8faf5ca407f2 at IP: 34.249.106.213 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-0faa9100fc7e96ce5 at IP: 52.19.198.45 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-0a1639b8d4bdf967c at IP: 54.77.80.217 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-095dd986272ad9d1d at IP: 54.194.122.21 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Instance: i-0a97b48c6973e0678 at IP: 52.214.166.195 is internet-facing! </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-2: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> sa-east-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> ca-central-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-2: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-036b9e66bfa4f0371 at IP: 34.224.68.106 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-05dec2a9d08b37e28 at IP: 52.87.238.119 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-08eb550c541623715 at IP: 18.205.240.199 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0b146ff09191b51a9 at IP: 54.89.221.213 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0c5b52db4df58ba46 at IP: 52.87.207.199 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0716d52a765dbeab1 at IP: 18.206.204.202 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-05f6b6594cfa9b595 at IP: 34.229.220.255 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-063c4362a3f8e3af1 at IP: 18.206.170.112 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-03f1db23944317634 at IP: 35.153.139.173 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0b8be2216cea871b8 at IP: 107.21.167.73 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-040c334a737e8b746 at IP: 34.224.23.59 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0fa53f7bf5c6b6bc2 at IP: 34.229.164.254 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0dea3f4c2b4618150 at IP: 35.172.224.148 is internet-facing! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Instance: i-0f6e4d6e73ffdfd79 at IP: 34.237.123.125 is internet-facing! </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-1: no Internet Facing EC2 Instances found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-2: no Internet Facing EC2 Instances found
+
+<span class="ansi35"> 7.11 [extra711] Check for Publicly Accessible Redshift Clusters (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for Reshift clusters in all regions...   </span>
+      <span class="ansi1 ansi32"> PASS!</span> ap-south-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-3: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-2: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-2: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> ap-northeast-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> sa-east-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> ca-central-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> ap-southeast-2: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> eu-central-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> us-east-2: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-1: no Publicly Accessible Redshift Clusters found
+      <span class="ansi1 ansi32"> PASS!</span> us-west-2: no Publicly Accessible Redshift Clusters found
+
+<span class="ansi35"> 7.12 [extra712] Check if Amazon Macie is enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! No API commands available to check if Macie is enabled, </span>
+      <span class="ansi1 ansi33"> INFO! just looking if IAM Macie related permissions exist.   </span>
+      <span class="ansi1 ansi31"> FAIL! No Macie related IAM roles found. It is most likely not to be enabled </span>
+
+<span class="ansi35"> 7.13 [extra713] Check if GuardDuty is enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-2: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-2: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-1: GuardDuty detector not configured! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: GuardDuty detector not configured! </span>
+
+<span class="ansi35"> 7.14 [extra714] Check if CloudFront distributions have logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-south-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-3: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-2: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-2: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-2: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-2: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-2: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-2: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-northeast-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! sa-east-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ca-central-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! ap-southeast-2: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-2: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-2: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-2: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-2: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-2: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-1: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-1: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-1: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-1: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-1: CDN EJCFE0HKV86I4 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: CDN E2I6YR07QTB7H8 logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: CDN E8ZGDHYW52N4E logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: CDN E3P82VU0K5IEAI logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: CDN E3QCMWTW1VAXLZ logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! us-west-2: CDN EJCFE0HKV86I4 logging disabled! </span>
+
+<span class="ansi35"> 7.15 [extra715] Check if Elasticsearch Service domains have logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: ElasticSearch Service domain b12es SEARCH_SLOW_LOGS disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: ElasticSearch Service domain b12es INDEX_SLOW_LOGS disabled! </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No Elasticsearch Service domain found </span>
+
+<span class="ansi35"> 7.16 [extra716] Check if Elasticsearch Service domains allow open access (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: b12es policy "may" allow Anonymous users to perform actions (Principal: "*") </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No Elasticsearch Service domain found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No Elasticsearch Service domain found </span>
+
+<span class="ansi35"> 7.17 [extra717] Check if Elastic Load Balancers have logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No ELBs found </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: ServiceALB has not configured access logs </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: AlphaGameServerClusterALB has not configured access logs </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No ELBs found </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: awseb-e-m-AWSEBLoa-P0ED2P50MARD has not configured access logs </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: ServiceClusterALB has not configured access logs </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: GameServerClusterALB has not configured access logs </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Prod-ServiceALB has not configured access logs </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: GoldClusterALB has not configured access logs </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No ELBs found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No ELBs found </span>
+
+<span class="ansi35"> 7.18 [extra718] Check if S3 buckets have server access logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12-dlc-test has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12.eu-west-1.alpha.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12.gamespace.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12.sql.backups has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12.us-east-1.alpha.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12.us-east-1.beta.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket b12.us-east-1.gold.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket backup-game-efs-bucket has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket cf-templates-hrwhitupm24r-us-east-1 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket codepipeline-eu-west-1-454327313943 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket codepipeline-us-east-1-865907654632 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket dataservice.b12.bucket has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket dlc.eu-west-1.alpha.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket dlc.us-east-1.alpha.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket dlc.us-east-1.gold.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket dlc.us-east-1.war has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket dynamodb-export-ireland has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket efs-backup-daily has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket efs-backup-hourly has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elastic-search-123 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elasticbeanstalk-eu-central-1-409346597177 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elasticbeanstalk-eu-west-1-409346597177 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elasticbeanstalk-eu-west-2-409346597177 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elasticbeanstalk-us-east-1-409346597177 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elasticbeanstalk-us-east-2-409346597177 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket elb-connection.log has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket game-instalation has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket general-tmp-us-east-1 has server access logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Bucket sample-0987654321 has server access logging disabled! </span>
+      <span class="ansi1 ansi32"> PASS!</span> Bucket sample12345678901 has server access logging enabled
+      <span class="ansi1 ansi31"> FAIL! Bucket thor-server-b12 has server access logging disabled! </span>
+
+<span class="ansi35"> 7.19 [extra719] Check if Route53 hosted zones are logging queries to CloudWatch Logs (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi31"> FAIL! Route53 hosted zone Id /hostedzone/ZI1LBW1GNW700 has query logging disabled! </span>
+      <span class="ansi1 ansi31"> FAIL! Route53 hosted zone Id /hostedzone/ZBYI4G2XB1IRE has query logging disabled! </span>
+
+<span class="ansi35"> 7.20 [extra720] Check if Lambda functions invoke API operations are being recorded by CloudTrail (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No Lambda functions found </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Lambda function backup-efs is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Lambda function EC2stack is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Lambda function start-backup-ec2 is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Lambda function shutdownFunc is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi31"> FAIL! eu-west-1: Lambda function startFunc is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No Lambda functions found </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: Lambda function LambdaFunctionOverHttps is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi31"> FAIL! us-east-1: Lambda function genDashboardLmb-genDashboard-1LEUVDNDUINX6 is not being recorded no CloudTrail found! </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No Lambda functions found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No Lambda functions found </span>
+
+<span class="ansi35"> 7.21 [extra721] Check if Redshift cluster has audit logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No Redshift cluster configured </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No Redshift cluster configured </span>
+
+<span class="ansi35"> 7.22 [extra722] Check if API Gateway has logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No API Gateway found </span>
+      <span class="ansi1 ansi31"> FAIL! eu-central-1: API Gateway DynamoDBOperations logging disabled for stage prod! </span>
+      <span class="ansi1 ansi33"> INFO! us-east-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No API Gateway found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No API Gateway found </span>
+
+<span class="ansi35"> 7.23 [extra723] Check if RDS Snapshots are public (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot b12-test-01-02-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot b12-test-final-snapshot is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot beforestresstestauth is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot change-type-snapshot is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot crossregion is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot from-snapshot-final-snapshot is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot loadtestsnapshot is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot manual-snapshot-01-30-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot manual-snapshot-22-01-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot manual-snapshot-23-01-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-03-00-09 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-04-00-15 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-05-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-06-00-10 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-07-00-09 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-08-00-10 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-09-00-10 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot rds:ms-sql-express-2018-07-10-00-13 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot snap2018-02-08 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: RDS Snapshot testinstance-final-snapshot is not shared
+      <span class="ansi1 ansi33"> INFO! eu-west-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot b12-gold-29-03-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot b12-load-tests-02-12-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot b12-load-tests-25-04-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot b12-load-tests-final-snapshot is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot b12-mssql-rds-final-snapshot is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot copiedfromireland is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot production-04-25-2018 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-10-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-11-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-12-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-13-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-14-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-15-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-16-00-13 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-17-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-18-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-19-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-20-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-21-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-22-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-23-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-24-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-25-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-26-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-27-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-28-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-29-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-06-30-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-01-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-02-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-03-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-04-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-05-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-06-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-07-00-13 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-08-00-13 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-09-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-gold-2018-07-10-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-03-00-12 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-04-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-05-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-06-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-07-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-08-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-09-00-11 is not shared
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: RDS Snapshot rds:b12-load-tests-2018-07-10-00-11 is not shared
+      <span class="ansi1 ansi33"> INFO! us-east-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! us-east-2: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No RDS Cluster Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No RDS Snapshots found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No RDS Cluster Snapshots found </span>
+
+<span class="ansi35"> 7.24 [extra724] Check if ACM certificates have Certificate Transparency logging enabled (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! ap-south-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-3: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! eu-west-2: No ACM Certificates found </span>
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: ACM Certificate b12.bg has Certificate Transparency logging enabled!
+      <span class="ansi1 ansi32"> PASS!</span> eu-west-1: ACM Certificate *.instantwar.com has Certificate Transparency logging enabled!
+      <span class="ansi1 ansi33"> INFO! ap-northeast-2: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! ap-northeast-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! sa-east-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! ca-central-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! ap-southeast-2: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! eu-central-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: ACM Certificate b12.bg has Certificate Transparency logging enabled!
+      <span class="ansi1 ansi32"> PASS!</span> us-east-1: ACM Certificate *.instantwar.com has Certificate Transparency logging enabled!
+      <span class="ansi1 ansi33"> INFO! us-east-2: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-1: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No ACM Certificates found </span>
+      <span class="ansi1 ansi33"> INFO! *Read more about this here: <a href="https://aws.amazon.com/blogs/security/how-to-get-ready-for-certificate-transparency/">https://aws.amazon.com/blogs/security/how-to-get-ready-for-certificate-transparency/</a> </span>
+
+<span class="ansi35"> 7.25 [extra725] Check if S3 buckets have Object-level logging enabled in CloudTrail (Not Scored) (Not part of CIS benchmark) </span>
+      <span class="ansi1 ansi33"> INFO! Looking for S3 Buckets Object-level logging information in all trails...   </span>
+      <span class="ansi1 ansi33"> INFO! us-west-2: No S3 buckets found </span>
+
+</pre>
+</body>
+
+</html>
