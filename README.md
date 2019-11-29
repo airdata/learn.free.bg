@@ -3,4 +3,4 @@
 
 * A nodejs web app 
 [![CircleCI](https://img.shields.io/circleci/project/github/airdata/learn.svg)](https://circleci.com/gh/airdata/learn )
-[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge&style=flat)](https://insite-rumen.herokuapp.com/projects.html)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge&style=flat)](https://learn-rumen-lishkov.herokuapp.com/)
