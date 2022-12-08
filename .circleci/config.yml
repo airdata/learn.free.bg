@@ -1,23 +1,17 @@
-version: 2.1
-executors:
-  my-custom-executor:
-    docker:
-      - image: cimg/node:19.1.0
-        auth:
-          # ensure you have first added these secrets
-          # visit app.circleci.com/settings/project/github/airdata/learn/environment-variables
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
+version: '2.1'
+orbs:
+  nodejs: canterberry/nodejs@12.1.0
 jobs:
-  my-job-name:
-
-    executor: my-custom-executor
+  test:
+    executor: node/default
     steps:
       - checkout
-      - run: |
-          npm install
-
+      - run: sudo npm install -g npm@latest
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run: npm run test
 workflows:
-  my-custom-workflow:
-    jobs:
-      - my-job-name
+    example-workflow:
+      jobs:
+        - nodejs/install
