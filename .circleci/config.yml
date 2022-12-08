@@ -2,29 +2,16 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.2
 jobs:
-  build_and_test: # this can be any name you choose
-    executor: node/default # use the default executor defined within the orb
+  test:
+    executor: node/default
     steps:
       - checkout
+      - run: sudo npm install -g npm@latest
       - node/install-packages:
-          pkg-manager: npm
-      - run:
-          command: npm start
-          name: Run tests
-      - run:
-          command: npm run test
-          name: Build app
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - .
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run: npm run test
 workflows:
-  build_test_deploy: # this can be any name you choose
+  test_my_app:
     jobs:
-      - build_and_test
-      - deploy:
-          requires:
-            - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: main # only deploy when on main
+      - test
