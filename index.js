@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 5000
 http.createServer(function (request, response) {
     console.log('request ', request.url);
 
-    var filePath = './public' + request.url;
-    if (filePath == './public/') {
-        filePath = './public/index.html';
+    var filePath = './docs' + request.url;
+    if (filePath == './docs/') {
+        filePath = './docs/index.html';
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
